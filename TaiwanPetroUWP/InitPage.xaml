@@ -1,0 +1,87 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="TaiwanPetroUWP.InitPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TaiwanPetroUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:libViewModels="using:TaiwanPetroLibrary.ViewModels"
+    xmlns:fa="using:FontAwesome.UWP"
+    mc:Ignorable="d" Loaded="pageRoot_Loaded">
+    <Page.DataContext>
+        <libViewModels:infoViewModel/>
+    </Page.DataContext>
+
+    <Grid>
+        <CommandBar DefaultLabelPosition="Right">
+            <AppBarButton x:Name="facebook" Label="進入粉絲團" Tapped="facebook_Tapped">
+                <AppBarButton.Icon>
+                    <fa:FontAwesome Icon="FacebookOfficial"></fa:FontAwesome>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="email" Label="聯絡開發者" Tapped="email_Tapped">
+                <AppBarButton.Icon>
+                    <fa:FontAwesome Icon="EnvelopeOutline"></fa:FontAwesome>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton x:Name="nextBtn" Label="結束設定" Tapped="nextBtn_Tapped">
+                <AppBarButton.Icon>
+                    <fa:FontAwesome Icon="CheckSquareOutline"></fa:FontAwesome>
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </CommandBar>
+        <Grid Margin="12,50,12,0">
+            <ScrollViewer>
+                <StackPanel>
+                    <TextBlock Text="本頁提供初次或升級版本後的快速設定（約六項），您稍後可於下方齒輪按鈕中進行更多微調" TextWrapping="Wrap"/>
+                    <TextBlock Text="請按上方結束設定按鈕回到主畫面" HorizontalAlignment="Center" Margin="0,5" Foreground="#FFC12B2B"/>
+                    <StackPanel>
+                        <StackPanel x:Name="bulletin">
+                            <StackPanel.DataContext>
+                                <libViewModels:dcViewModel/>
+                            </StackPanel.DataContext>
+                            <Border BorderThickness="0,0,0,1" BorderBrush="Black" Margin="0,3">
+                                <TextBlock Text="歡迎訊息" FontSize="26"/>
+                            </Border>
+                            <TextBlock Text="歡迎使用本程式，由於本程式內建油價預測與動態磚，建議不要關閉本程式的背景執行，任何問題可以從「關於」中聯絡我" TextWrapping="Wrap"/>
+                            <Border BorderThickness="0,0,0,1" BorderBrush="Black" Margin="0,3">
+                                <TextBlock Text="本次版本更新項目" FontSize="26"/>
+                            </Border>
+                            <TextBlock Text="{Binding feedlist[0].content}" TextWrapping="Wrap"/>
+                        </StackPanel>
+                        <Border BorderThickness="0,0,0,1" BorderBrush="Black" Margin="0,3">
+                            <TextBlock Text="系統設定（之後可點齒輪按鈕修改）" FontSize="26"/>
+                        </Border>
+                        <TextBlock Text="平日自動更新油價" FontSize="26" Foreground="Black" Margin="0,5,0,0"/>
+                        <ToggleSwitch x:Name="autoupdate" Header="平日自動更新油價" IsOn="{Binding DataContext.autoUpdate, Mode=TwoWay, ElementName=pageRoot}"/>
+                        <TextBlock TextWrapping="Wrap" Foreground="Gray" Text="本設定只在平日有效，請注意，自動更新啟動下，若上一次和此次檢查只差五分鐘，將不會啟動更新"/>
+                        <TextBlock Text="平日油價預測通知" FontSize="26" Foreground="Black" Margin="0,5,0,0"/>
+                        <ToggleSwitch x:Name="notification" Header="平日油價預測通知" IsOn="{Binding DataContext.dailynotifyEnable, Mode=TwoWay, ElementName=pageRoot}"/>
+                        <TextBlock TextWrapping="Wrap" Foreground="Gray" Text="油價預測提醒會於平日跳出，詳細時間設定請進入程式後調整"/>
+                        <TextBlock Text="抓取酒精汽油價格" x:Name="soapcontrol" FontSize="26" Foreground="Black" Margin="0,5,0,0">
+                            <TextBlock.DataContext>
+                                <libViewModels:cpViewModel/>
+                            </TextBlock.DataContext>
+                        </TextBlock>
+                        <ToggleSwitch x:Name="achol" Header="抓取酒精汽油價格" IsOn="{Binding DataContext.soapUpdate, Mode=TwoWay, ElementName=soapcontrol}"/>
+                        <TextBlock TextWrapping="Wrap" Foreground="Gray" Text="酒精汽油價格要另外連限至中油SOAP主機，可能會延長下載資料時間"/>
+                        <Border BorderThickness="0,0,0,1" BorderBrush="Black" Margin="0,3">
+                            <TextBlock Text="加油站過濾器（之後可點過濾器按鈕修改）" FontSize="26"/>
+                        </Border>
+                        <StackPanel x:Name="stationfilters">
+                            <StackPanel.DataContext>
+                                <libViewModels:stationViewModel/>
+                            </StackPanel.DataContext>
+                            <CheckBox x:Name="_95only" Content="95無鉛汽油" IsChecked="{Binding sfilterp95, Mode=TwoWay}"/>
+                            <CheckBox x:Name="avaiablehours" Content="僅顯示營業中的加油站" IsChecked="{Binding sfilterInservice, Mode=TwoWay}"/>
+                            <TextBlock Text="營業時間資料來自於台塑與中油網站，若與實際不符，請以實際為準" Foreground="DarkGray" TextWrapping="Wrap"/>
+                            <CheckBox x:Name="cpconly" Content="不顯示台塑加油站" IsChecked="{Binding sfilterFPCC, Mode=TwoWay}"/>
+                            <CheckBox x:Name="directonly" Content="僅顯示直營加油站" IsChecked="{Binding sfilterDirect, Mode=TwoWay}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

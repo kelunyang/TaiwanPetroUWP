@@ -1,0 +1,165 @@
+﻿<Page
+    x:Class="TaiwanPetroUWP.PredictPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TaiwanPetroUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:fa="using:FontAwesome.UWP"
+    xmlns:ViewModels="using:TaiwanPetroLibrary.ViewModels"
+    xmlns:Helpers="using:TaiwanPetroUWP.Helpers"
+    xmlns:Converters="using:Cimbalino.Toolkit.Converters"
+    xmlns:oxy="using:OxyPlot.Windows"
+    mc:Ignorable="d" x:Name="pageRoot" Loaded="pageRoot_Loaded">
+    <Page.Resources>
+        <Converters:StringFormatConverter x:Key="StringFormatConverter"/>
+        <Helpers:predictpausetextConverter x:Key="predictpausetextConverter"/>
+        <Helpers:boolvisConverter x:Key="boolvisConverter"/>
+        <Helpers:signConverter x:Key="signConverter"/>
+        <Helpers:priceConverter x:Key="priceConverter"/>
+        <Helpers:colorConverter x:Key="colorConverter"/>
+        <Helpers:dateConverter x:Key="dateConverter"/>
+    </Page.Resources>
+    <Page.DataContext>
+        <ViewModels:infoViewModel/>
+    </Page.DataContext>
+
+    <Grid x:Name="gridRoot" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.DataContext>
+            <ViewModels:ppViewModel/>
+        </Grid.DataContext>
+        <CommandBar DefaultLabelPosition="Right">
+            <AppBarButton x:Name="refreshBtn" Label="更新油價" Tapped="refreshBtn_Tapped">
+                <AppBarButton.Icon>
+                    <fa:FontAwesome Icon="Refresh"></fa:FontAwesome>
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </CommandBar>
+        <Grid Grid.Row="0" Margin="12,50,12,0" x:Name="progressArea" Visibility="{Binding progressVis, ConverterParameter=1, Converter={StaticResource boolvisConverter}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <ProgressBar x:Name="progressVal" Foreground="Green" Value="{Binding progressVal}"/>
+            <TextBlock x:Name="progressMsg" Text="{Binding progressMsg}" Grid.Column="1"/>
+        </Grid>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel x:Name="forcastbulletin" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <StackPanel>
+                    <Border BorderThickness="0,0,0,1" BorderBrush="Black" Margin="0,3">
+                        <TextBlock Text="計算週期" FontSize="26"/>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" Margin="100,0,0,0" >
+                        <TextBlock Text="{Binding pstartdate, Converter={StaticResource dateConverter}}"/>
+                        <TextBlock Text="至" Margin="5,0"/>
+                        <TextBlock Text="{Binding penddate, Converter={StaticResource dateConverter}}" />
+                    </StackPanel>
+                    <TextBlock  Foreground="#FFE40000" Text="{Binding predictpause, Converter={StaticResource predictpausetextConverter}}" Margin="0"/>
+                    <StackPanel>
+                        <Border BorderThickness="0,0,0,1" BorderBrush="Black" Margin="0,3">
+                            <TextBlock Text="汽油價格預測" FontSize="26"/>
+                        </Border>
+                        <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Grid Height="40" Width="40" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Path Data="F1M0,29.898L34.523,29.898 17.262,0z" Fill="Red" UseLayoutRounding="False" Visibility="{Binding pprice, ConverterParameter=2, Converter={StaticResource signConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <Path Data="F1M0,29.898L34.523,29.898 17.262,0z" Fill="#FF46DE46" UseLayoutRounding="False" Visibility="{Binding pprice, ConverterParameter=1, Converter={StaticResource signConverter}}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Path.RenderTransform>
+                                        <CompositeTransform ScaleY="-1"/>
+                                    </Path.RenderTransform>
+                                </Path>
+                                <Rectangle Fill="#FFD1D1D1" HorizontalAlignment="Center" Height="24" VerticalAlignment="Center" Width="24" Visibility="{Binding pprice, ConverterParameter=0, Converter={StaticResource signConverter}}"/>
+                            </Grid>
+                            <TextBlock FontSize="120"  Text="{Binding pprice, Converter={StaticResource priceConverter}}" TextAlignment="Center" Foreground="{Binding pprice, Converter={StaticResource colorConverter}}"/>
+                        </StackPanel>
+                        <oxy:PlotView Height="200" Model="{Binding price95Model}" x:Name="chart95" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" IsMouseWheelEnabled="False"/>
+                        <Border BorderThickness="0,0,0,1" BorderBrush="Black" Margin="0,3">
+                            <TextBlock Text="柴油價格預測" FontSize="26"/>
+                        </Border>
+                        <StackPanel Margin="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Grid Height="40" Width="40" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Path Data="F1M0,29.898L34.523,29.898 17.262,0z" Fill="Red" UseLayoutRounding="False" Visibility="{Binding pdprice, ConverterParameter=2, Converter={StaticResource signConverter}}"/>
+                                <Path Data="F1M0,29.898L34.523,29.898 17.262,0z" Fill="#FF46DE46" UseLayoutRounding="False" Visibility="{Binding pdprice, ConverterParameter=1, Converter={StaticResource signConverter}}">
+                                    <Path.RenderTransform>
+                                        <CompositeTransform ScaleY="-1"/>
+                                    </Path.RenderTransform>
+                                </Path>
+                                <Rectangle Fill="#FFD1D1D1" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="24" Visibility="{Binding pdprice, ConverterParameter=0, Converter={StaticResource signConverter}}"/>
+                            </Grid>
+                            <TextBlock FontSize="120"  Text="{Binding pdprice, Converter={StaticResource priceConverter}}" TextAlignment="Center" Foreground="{Binding pdprice, Converter={StaticResource colorConverter}}"/>
+                        </StackPanel>
+                        <oxy:PlotView Height="200" Model="{Binding pricedieselModel}" x:Name="chartdiesel" Tapped="chartdiesel_Tapped" IsMouseWheelEnabled="False" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <StackPanel Margin="5">
+                            <Border Background="#FFEEEEEE" Padding="5,2">
+                                <TextBlock Text="本周國際均價" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="5,0,0,0" BorderBrush="#FFB2B2B2" Margin="3" Padding="3" Grid.Column="0" Grid.Row="0">
+                                    <TextBlock Text="布蘭特"/>
+                                </Border>
+                                <Border BorderThickness="5,0,0,0" BorderBrush="#FFB2B2B2" Margin="3" Padding="3" Grid.Column="0" Grid.Row="1">
+                                    <TextBlock Text="杜拜"/>
+                                </Border>
+                                <Border BorderThickness="5,0,0,0" BorderBrush="#FFB2B2B2" Margin="3" Padding="3" Grid.Column="0" Grid.Row="2">
+                                    <TextBlock Text="匯率"/>
+                                </Border>
+                                <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding currentbrent, Converter={StaticResource priceConverter}}" HorizontalAlignment="Right" Margin="20,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding currentdubai, Converter={StaticResource priceConverter}}" HorizontalAlignment="Right" Margin="20,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding currentcurrency, Converter={StaticResource priceConverter}}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel Margin="5">
+                            <Border Background="#FFEEEEEE" Padding="5,2">
+                                <TextBlock Text="上周國際均價" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Border BorderThickness="5,0,0,0" BorderBrush="#FFB2B2B2" Margin="3" Padding="3" Grid.Column="0" Grid.Row="0">
+                                    <TextBlock Text="布蘭特"/>
+                                </Border>
+                                <Border BorderThickness="5,0,0,0" BorderBrush="#FFB2B2B2" Margin="3" Padding="3" Grid.Column="0" Grid.Row="1">
+                                    <TextBlock Text="杜拜"/>
+                                </Border>
+                                <Border BorderThickness="5,0,0,0" BorderBrush="#FFB2B2B2" Margin="3" Padding="3" Grid.Column="0" Grid.Row="2">
+                                    <TextBlock Text="匯率"/>
+                                </Border>
+                                <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding pastbrent, Converter={StaticResource priceConverter}}" HorizontalAlignment="Right" Margin="20,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding pastdubai, Converter={StaticResource priceConverter}}" HorizontalAlignment="Right" Margin="20,0,0,0" VerticalAlignment="Center"/>
+                                <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding pastcurrency, Converter={StaticResource priceConverter}}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+                    </StackPanel>
+                    <TextBlock TextWrapping="Wrap" Text="公式：下周92價格=本周92價格+本周92價格×((本周杜拜均價×0.7+本周布蘭特均價×0.3)×本周匯率均價-上周國際油價（算法同本周）)÷上周國際油價×0.8" FontSize="16" Foreground="#FF515151" Margin="5,5,5,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="本程式依照能源局公告之國際油價、匯率並依照中油浮動油價公式計算油價漲跌幅，若與中油最後參考鄰國油價等多重因素調整結果不同，一切依中油公司公告為準" FontSize="16" Margin="5" Foreground="#FF898989"/>
+                </StackPanel>
+                <Grid x:Name="cpGrid">
+                    <Grid.DataContext>
+                        <ViewModels:cpViewModel/>
+                    </Grid.DataContext>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
