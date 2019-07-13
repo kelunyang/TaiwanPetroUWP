@@ -1,3 +1,4 @@
+*20190714*
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <discountset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -6,9 +7,9 @@
 		<servetype>人工</servetype>
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
-		<content>天天降0.9元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.9元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -17,8 +18,8 @@
 		<bank>凱基銀行</bank>
 		<card>魔Fun卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -26,9 +27,9 @@
 		<servetype>人工</servetype>
 		<bank>第一銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.8元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -36,19 +37,19 @@
 		<servetype>人工</servetype>
 		<bank>玉山銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.8元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
 		<brand>全國</brand>
 		<servetype>人工</servetype>
-		<bank>聯邦銀行</bank>
-		<card>以Apple Pay, Google Pay等</card>
-		<content>週二降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<bank>台北富邦銀行</bank>
+		<card>OMIYAGE卡</card>
+		<content>天天降1.6元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -57,8 +58,8 @@
 		<bank>聯邦銀行</bank>
 		<card>全國加油站聯名卡</card>
 		<content>週二降1.2元，天天降1元或回饋大利點數10倍送</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -66,9 +67,9 @@
 		<servetype>人工</servetype>
 		<bank>台北富邦銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.8元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -76,9 +77,9 @@
 		<servetype>人工</servetype>
 		<bank>台新銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.8元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -86,9 +87,9 @@
 		<servetype>人工</servetype>
 		<bank>聯邦銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降0.9元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.9元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -96,9 +97,9 @@
 		<servetype>人工</servetype>
 		<bank>花旗銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降0.9元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.9元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -106,9 +107,9 @@
 		<servetype>人工</servetype>
 		<bank>合作金庫</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -116,9 +117,9 @@
 		<servetype>自助</servetype>
 		<bank>聯邦銀行</bank>
 		<card>全國加油站聯名卡</card>
-		<content>週二降1.8元，天天降1.3元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>週二降1.8元，天天降1.3元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -127,8 +128,8 @@
 		<bank>聯邦銀行</bank>
 		<card>全國加油站聯名卡綁Apple Pay, Google Pay等</card>
 		<content>週二降2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -136,9 +137,9 @@
 		<servetype>自助</servetype>
 		<bank>凱基銀行</bank>
 		<card>魔Fun卡</card>
-		<content>天天降1.3元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.3元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -146,9 +147,9 @@
 		<servetype>自助</servetype>
 		<bank>聯邦銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.2元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -156,9 +157,9 @@
 		<servetype>自助</servetype>
 		<bank>玉山銀行</bank>
 		<card>信用卡</card>
-		<content>天天降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.1元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -166,9 +167,9 @@
 		<servetype>自助</servetype>
 		<bank>第一銀行</bank>
 		<card>信用卡</card>
-		<content>天天降1.1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.1元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -176,9 +177,9 @@
 		<servetype>自助</servetype>
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
-		<content>天天降1.1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.2元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -186,9 +187,9 @@
 		<servetype>自助</servetype>
 		<bank>台新銀行</bank>
 		<card>信用卡</card>
-		<content>週日降1.3元，天天降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.1元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -196,9 +197,9 @@
 		<servetype>自助</servetype>
 		<bank>不指定</bank>
 		<card>Visa金融卡</card>
-		<content>機車天天降1.5元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>機車天天降1.6元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -206,9 +207,9 @@
 		<servetype>自助</servetype>
 		<bank>花旗銀行</bank>
 		<card>信用卡</card>
-		<content>天天降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.2元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -216,9 +217,9 @@
 		<servetype>自助</servetype>
 		<bank>台北富邦銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.1元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -226,19 +227,29 @@
 		<servetype>自助</servetype>
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
-		<content>天天降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.2元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
 		<brand>全國</brand>
 		<servetype>自助</servetype>
-		<bank>合作金庫</bank>
-		<card>信用卡或Visa金融卡</card>
-		<content>天天降1.3元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<bank>台北富邦銀行</bank>
+		<card>OMIYAGE卡</card>
+		<content>天天降1.6元，週三滿25公升再降25元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
+		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
+	</discount>
+	<discount>
+		<brand>全國</brand>
+		<servetype>自助</servetype>
+		<bank>中國信託銀行</bank>
+		<card>LINE Pay卡</card>
+		<content>享5% LINE Point回饋</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -246,9 +257,9 @@
 		<servetype>人工</servetype>
 		<bank>第一銀行</bank>
 		<card>信用卡或Visa金融卡</card>
-		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.7元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -257,8 +268,8 @@
 		<bank>元大銀行</bank>
 		<card>白金以上信用卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -267,8 +278,8 @@
 		<bank>台中銀行</bank>
 		<card>信用卡或Visa金融卡</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -277,8 +288,8 @@
 		<bank>國泰世華</bank>
 		<card>白金級以上信用卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -287,8 +298,8 @@
 		<bank>國泰世華</bank>
 		<card>台塑聯名卡</card>
 		<content>週三降1元，天天降0.8元，加油金每公升底1元（週三最高降2元，平日最高降1.8元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -297,8 +308,8 @@
 		<bank>玉山銀行</bank>
 		<card>信用卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -307,8 +318,8 @@
 		<bank>新光銀行</bank>
 		<card>信用卡或Visa金融卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -317,8 +328,8 @@
 		<bank>合作金庫</bank>
 		<card>信用卡或Visa金融卡</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -327,8 +338,8 @@
 		<bank>國泰世華</bank>
 		<card>台塑聯名卡</card>
 		<content>天天降1.2元，加油金每公升可折抵2元（最高降價2.2元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -337,8 +348,8 @@
 		<bank>新光銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -347,8 +358,8 @@
 		<bank>元大銀行</bank>
 		<card>白金級以上信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -357,8 +368,8 @@
 		<bank>台中銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -367,8 +378,8 @@
 		<bank>花旗銀行</bank>
 		<card>Apple Pay支付</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -377,8 +388,8 @@
 		<bank>玉山銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -387,8 +398,8 @@
 		<bank>國泰世華</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -397,8 +408,8 @@
 		<bank>第一銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -407,8 +418,8 @@
 		<bank>不指定</bank>
 		<card>信用卡或行動支付</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -417,8 +428,8 @@
 		<bank>國泰世華</bank>
 		<card>台塑聯名卡</card>
 		<content>週三降1元，天天降0.8元，加油金每公升抵2元，最高降2.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -427,8 +438,8 @@
 		<bank>新光銀行</bank>
 		<card>信用卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -437,8 +448,8 @@
 		<bank>國泰世華</bank>
 		<card>白金級以上信用卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -447,8 +458,8 @@
 		<bank>元大銀行</bank>
 		<card>白金級以上信用卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -457,8 +468,8 @@
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -466,9 +477,9 @@
 		<servetype>人工</servetype>
 		<bank>不指定</bank>
 		<card>Visa金融卡</card>
-		<content>天天降0.8元（十公升以上）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.5元（十公升以上）</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -476,9 +487,9 @@
 		<servetype>自助</servetype>
 		<bank>不指定</bank>
 		<card>Visa金融卡</card>
-		<content>天天降0.3元（十公升以上）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降0.8元（十公升以上）</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -487,8 +498,8 @@
 		<bank>國泰世華</bank>
 		<card>台塑聯名卡</card>
 		<content>天天降1.2元，加油金每公升可抵1元（最高降價2.2元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -497,8 +508,8 @@
 		<bank>國泰世華</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -506,9 +517,9 @@
 		<servetype>自助</servetype>
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
-		<content>天天降1.1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1元</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -517,8 +528,8 @@
 		<bank>元大銀行</bank>
 		<card>白金級以上信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -527,8 +538,8 @@
 		<bank>不指定</bank>
 		<card>信用卡</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -537,8 +548,8 @@
 		<bank>國泰世華</bank>
 		<card>台塑聯名卡</card>
 		<content>週三降1元，天天降0.8元，加油金每公升可折抵1元（週三最高降2元，平日最高降1.8元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -547,8 +558,8 @@
 		<bank>國泰世華</bank>
 		<card>信用卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -557,8 +568,8 @@
 		<bank>台中銀行</bank>
 		<card>信用卡</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -567,8 +578,8 @@
 		<bank>元大銀行</bank>
 		<card>白金級以上信用卡</card>
 		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -577,18 +588,8 @@
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
-		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
-	</discount>
-	<discount>
-		<brand>福懋</brand>
-		<servetype>人工</servetype>
-		<bank>玉山銀行</bank>
-		<card>白金級以上信用卡</card>
-		<content>天天降0.7元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -597,8 +598,8 @@
 		<bank>合作金庫</bank>
 		<card>信用卡</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -607,8 +608,8 @@
 		<bank>聯邦銀行</bank>
 		<card>不指定</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -617,8 +618,8 @@
 		<bank>不指定</bank>
 		<card>信用卡</card>
 		<content>天天降0.3元（須加滿10公升）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -627,8 +628,8 @@
 		<bank>國泰世華</bank>
 		<card>台塑聯名卡</card>
 		<content>天天降1.2元，加油金每公升可折抵1元（最高降價2.2元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -637,8 +638,8 @@
 		<bank>國泰世華</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -647,18 +648,18 @@
 		<bank>台中銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
 		<brand>福懋</brand>
 		<servetype>自助</servetype>
 		<bank>元大銀行</bank>
-		<card>信用卡</card>
+		<card>白金級以上信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -667,8 +668,8 @@
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -677,18 +678,8 @@
 		<bank>聯邦銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
-		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
-	</discount>
-	<discount>
-		<brand>福懋</brand>
-		<servetype>自助</servetype>
-		<bank>玉山銀行</bank>
-		<card>信用卡</card>
-		<content>天天降1元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -697,8 +688,8 @@
 		<bank>合作金庫</bank>
 		<card>信用卡</card>
 		<content>天天降1.2元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -707,8 +698,8 @@
 		<bank>不指定</bank>
 		<card>信用卡</card>
 		<content>天天降0.8元</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -717,8 +708,8 @@
 		<bank>玉山銀行</bank>
 		<card>山隆優油卡</card>
 		<content>天天降1.6元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -727,8 +718,8 @@
 		<bank>台中銀行</bank>
 		<card>信用卡</card>
 		<content>週三降1.5元、天天降1.1元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -737,8 +728,8 @@
 		<bank>合作金庫</bank>
 		<card>信用卡</card>
 		<content>天天降1.1元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -747,8 +738,8 @@
 		<bank>玉山銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1.1元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -757,8 +748,8 @@
 		<bank>中國信託銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -767,8 +758,8 @@
 		<bank>聯邦銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1.1元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -777,8 +768,8 @@
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -787,8 +778,8 @@
 		<bank>遠東銀行</bank>
 		<card>信用卡（Bankee卡除外）</card>
 		<content>天天降0.8元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -797,8 +788,8 @@
 		<bank>玉山銀行</bank>
 		<card>山隆優油卡</card>
 		<content>天天降2.2元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -807,8 +798,8 @@
 		<bank>台中銀行</bank>
 		<card>信用卡</card>
 		<content>週三降1.9元、天天降1.5元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -817,8 +808,8 @@
 		<bank>合作金庫</bank>
 		<card>信用卡</card>
 		<content>天天降1.5元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -827,8 +818,8 @@
 		<bank>玉山銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1.5元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -837,8 +828,8 @@
 		<bank>聯邦銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1.5元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -846,9 +837,9 @@
 		<servetype>自助</servetype>
 		<bank>中國信託銀行</bank>
 		<card>信用卡</card>
-		<content>天天降1.4元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<content>天天降1.3元（單筆加滿201元）</content>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -857,8 +848,8 @@
 		<bank>不指定</bank>
 		<card>信用卡</card>
 		<content>天天降1.2元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -867,8 +858,8 @@
 		<bank>永豐銀行</bank>
 		<card>信用卡</card>
 		<content>天天降1.3元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -877,8 +868,8 @@
 		<bank>遠東銀行</bank>
 		<card>信用卡（Bankee卡除外）</card>
 		<content>天天降1.3元（單筆加滿201元）</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -887,8 +878,8 @@
 		<bank>中國信託銀行</bank>
 		<card>中油聯名卡</card>
 		<content>累積點數可抵中油消費</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 	<discount>
@@ -898,7 +889,7 @@
 		<card>悠遊聯名卡</card>
 		<content>0.5%現金回饋（須上網登錄）</content>
 		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<enddate>43830</enddate>
 		<source>https://www.cathaybk.com.tw/cathaybk/personal/credit-card/discount/event/transportation/cpc2019/</source>
 	</discount>
 	<discount>
@@ -907,8 +898,8 @@
 		<bank>第一銀行</bank>
 		<card>速邁樂聯名卡</card>
 		<content>點數加倍回饋</content>
-		<startdate>43466</startdate>
-		<enddate>43555</enddate>
+		<startdate>43647</startdate>
+		<enddate>43738</enddate>
 		<source>https://www.cardu.com.tw/news/detail.php?37248</source>
 	</discount>
 </discountset>
