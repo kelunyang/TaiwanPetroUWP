@@ -1105,10 +1105,12 @@ namespace TaiwanPetroLibrary.ViewModels
 
         private long GetOpenTime(string time)
         {
-            if (time == "24小時")
+            time = time.Replace("～", "~");
+            if (time == "24小時" || time == "00:00 - 24:00")
             {
                 return 0;
-            } else if (time.Contains("暫停營業") || time.Contains("整修中") || time.Contains("停業中"))
+            }
+            else if (time.Contains("暫停營業") || time.Contains("整修中") || time.Contains("停業中"))
             {
                 return 0;
             }
@@ -1116,8 +1118,8 @@ namespace TaiwanPetroLibrary.ViewModels
             {
                 char sep = time.Contains("-") ? '-' : '~';
                 string[] starttime = time.Split(sep)[0].Split(':');
-                string shour = time.Split(sep)[0].Length == 4 ? time.Split(sep)[0].Substring(0, 2) : starttime[0];
-                string sminute = time.Split(sep)[0].Length == 4 ? time.Split(sep)[0].Substring(2, 2) : starttime[1];
+                string shour = time.Split(sep)[0].Length == 4 ? time.Split(sep)[0].Substring(0, 1) : starttime[0];
+                string sminute = time.Split(sep)[0].Length == 4 ? time.Split(sep)[0].Substring(3, 1) : starttime[1];
                 DateTime stime = new DateTime(1, 1, 1, Convert.ToInt32(shour), Convert.ToInt32(sminute), 0);
                 return stime.Ticks;
             }
@@ -1125,10 +1127,12 @@ namespace TaiwanPetroLibrary.ViewModels
 
         private long GetDurationTime(string time)
         {
-            if (time == "24小時" || time== "00:00 - 24:00")
+            time = time.Replace("～", "~");
+            if (time == "24小時" || time == "00:00 - 24:00")
             {
                 return 864000000000;
-            } else if (time.Contains("暫停營業") || time.Contains("整修中") || time.Contains("停業中"))
+            }
+            else if (time.Contains("暫停營業") || time.Contains("整修中") || time.Contains("停業中"))
             {
                 return 0;
             }
@@ -1136,16 +1140,16 @@ namespace TaiwanPetroLibrary.ViewModels
             {
                 char sep = time.Contains("-") ? '-' : '~';
                 string[] starttime = time.Split(sep)[0].Split(':');
-                string shour = time.Split(sep)[0].Length == 4 ? time.Split(sep)[0].Substring(0, 2) : starttime[0];
-                string sminute = time.Split(sep)[0].Length == 4 ? time.Split(sep)[0].Substring(2, 2) : starttime[1];
+                string shour = time.Split(sep)[0].Length == 4 ? time.Split(sep)[0].Substring(0, 1) : starttime[0];
+                string sminute = time.Split(sep)[0].Length == 4 ? time.Split(sep)[0].Substring(3, 1) : starttime[1];
                 DateTime stime = new DateTime(1, 1, 1, Convert.ToInt32(shour), Convert.ToInt32(sminute), 0);
                 DateTime duration = DateTime.MinValue;
                 if (starttime.Length > 1)
                 {
                     string[] endtime = time.Split(sep)[1].Split(':');
-                    string dhour = time.Split(sep)[1].Length == 4 ? time.Split(sep)[1].Substring(0, 2) : endtime[0];
+                    string dhour = time.Split(sep)[1].Length == 4 ? time.Split(sep)[1].Substring(0, 1) : endtime[0];
                     dhour = dhour == "24" ? "0" : dhour;
-                    string dminute = time.Split(sep)[1].Length == 4 ? time.Split(sep)[1].Substring(2, 2) : endtime[1];
+                    string dminute = time.Split(sep)[1].Length == 4 ? time.Split(sep)[1].Substring(3, 1) : endtime[1];
                     duration = new DateTime(1, 1, 1, Convert.ToInt32(dhour), Convert.ToInt32(dminute), 0);
                 }
                 return duration.Subtract(stime).Ticks;

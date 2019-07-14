@@ -246,7 +246,8 @@ namespace TaiwanPetroLibrary.ViewModels
                 if (rev != dbRev) {
                     messenger.Report(new ProgressReport() { progress = 80, progressMessage = "開始更新本機折扣資料...", display = true });
                     var reda = Regex.Replace(textcontent, @"\*\d*\*",String.Empty);
-                    xmlContent = XDocument.Parse(Regex.Replace(reda, @"`{3}xml",String.Empty));
+                    var clearxml = Regex.Replace(reda, @"`{3}xml", String.Empty).Replace("\n", "");
+                    xmlContent = XDocument.Parse(clearxml);
                     dbRev = rev;
                     messenger.Report(new ProgressReport() { progress = 100, progressMessage = "折扣資料擷取完成", display = false });
                     return true;

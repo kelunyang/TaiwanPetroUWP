@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="40445Kelunyang.61055854F9AE6" Publisher="CN=DB89E666-2BCD-4AAA-8CF6-09B3E083D02C" Version="3.19.710.0" />
+  <Identity Name="40445Kelunyang.61055854F9AE6" Publisher="CN=DB89E666-2BCD-4AAA-8CF6-09B3E083D02C" Version="3.19.7142.0" />
   <mp:PhoneIdentity PhoneProductId="1ae224de-3aa8-4b9d-a137-1d3d9def744f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>台灣油價查詢</DisplayName>
